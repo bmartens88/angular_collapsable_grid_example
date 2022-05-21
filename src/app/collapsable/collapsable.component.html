@@ -1,0 +1,8 @@
+<div class="wrap-collapsable">
+  <label (click)="collapsed = !collapsed" class="lbl-toggle" [ngClass]="{ 'show-content' : !collapsed}">More Info</label>
+  <div class="collapsible-content" [ngClass]="{ 'show-content' : !collapsed }">
+    <div class="content-inner">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
